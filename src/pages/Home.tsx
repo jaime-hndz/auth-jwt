@@ -1,9 +1,8 @@
-import React from 'react'
+export const Home = (props : {name: string}) => {
 
-export const Home = () => {
   return (
     <div>
-        <h1>Home</h1>
+      <h1>{props.name ? "Hola "+props.name : "No estas logueado"}</h1>
     </div>
   )
 }
